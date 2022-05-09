@@ -1,0 +1,79 @@
+Let's make a game!
+
+name: Goofy Ahh Clicker
+by: Helloimdelicious
+
+Settings
+
+CSS
+
+.hasFlares{z-index:0;}
+.hasFlares:before,.hasFlares:after
+{
+    content:'';
+    width:150%;
+    height:150%;
+    position:absolute;
+    left:-25%;
+    top:-25%;
+    background:url(stuff/flare.png);
+    background-size:100%;
+    display:block;
+    z-index:-1;
+    animation:spinFade 3s linear infinite;
+    pointer-events:none;
+}
+.hasFlares:after
+{
+    animation:spinFade2 3s linear infinite;
+}
+
+@keyframes spinFade
+{
+    0% {transform:rotate(0deg) scale(1.5);opacity:0;}
+    50% {transform:rotate(45deg) scale(1);opacity:0.75;}
+    100% {transform:rotate(90deg) scale(0.5);opacity:0;}
+}
+@keyframes spinFade2
+{
+    0% {transform:rotate(225deg) scale(1);opacity:0.75;}
+    50% {transform:rotate(270deg) scale(0.5);opacity:0;}
+    50.1% {transform:rotate(180deg) scale(1.5);opacity:0;}
+    100% {transform:rotate(225deg) scale(1);opacity:0.75;}
+}
+.thing.bigButton
+{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:256px;
+    height:256px;
+    margin-left:-128px;
+    margin-top:-128px;
+    background-color:transparent;
+    box-shadow:none;
+    border:none;
+}
+.thing.bigButton:hover{background:transparent;}
+
+.thing.bigButton .thing-icon{transform:scale(1);transition:transform 0.05s ease-out;}
+.thing.bigButton:hover .thing-icon{transform:scale(1.02);}
+.thing.bigButton:active .thing-icon{transform:scale(0.98);}
+.customIcon
+{                            
+width:128px;       
+height:128px;
+}
+
+Resources
+
+*nickel
+name: Nickel
+icon: 
+
+
+Buildings
+
+Upgrades
+
+Achievements
