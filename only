@@ -13,13 +13,14 @@ Resources
   name: Nickel
   icon: https://file.garden/Ym8mX4CqGHPlp3yi/nickel.png
   desc: A clean shiny Coin.
-  on tick: lose 0.5 goofiness
+  lose 0.5 goofiness
 
 *goofiness
   name: Goofiness
   icon:https://file.garden/Ym8mX4CqGHPlp3yi/goofiness.png
   desc: A prime factor in goofy ahh production. Gives 1% boost in every resource production except nickels.
-  on tick: grant +1% gaUncle
+  grant +1% gaUncle
+  is always 5
 
 *gaUncle
 name: Goofy Ahh Uncle
