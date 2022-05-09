@@ -12,13 +12,13 @@ Resources
 *nickel
   name: Nickel
   icon: https://file.garden/Ym8mX4CqGHPlp3yi/nickel.png
-  description: A clean shiny Coin.
+  desc: A clean shiny Coin.
   on tick: -2
 
 *goofiness
   name: Goofiness
   icon:https://file.garden/Ym8mX4CqGHPlp3yi/goofiness.png
-  description: A prime factor in goofy ahh production.
+  desc: A prime factor in goofy ahh production.
   on tick: +0.01% gaUncle
 
 *gaUncle
